@@ -1,0 +1,81 @@
+.datepicker, .datepicker *{
+    box-sizing: border-box;
+}
+.datepicker {
+    width: 320px;
+    padding: 8px;
+    background: linear-gradient(to bottom, grey 0%, yellow 100% );
+}
+
+.datepicker__button {
+
+    border-radius:50%;
+    border:none;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-color: violet;
+}
+
+.arrow {
+    border: 1px solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding:3px;
+
+}
+.arrow_left {
+    transform:rotate(135deg);
+
+}
+.arrow_right {
+    transform: rotate(-45deg);
+}
+
+
+.datepicker__title {
+    display: inline-block;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 0;
+}
+
+.datepicker__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+.datepicker__week-days  {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+
+}
+.days__row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.datepicker__day-number{
+    margin: 5px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color: yellow;
+    border: 1px solid yellowgreen;
+
+}
+.datepicker__empty-day{
+    margin: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+
+}
+.active {
+    background-color: aqua;
+}
